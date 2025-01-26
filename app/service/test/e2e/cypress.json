@@ -1,0 +1,5 @@
+{
+  "baseUrl": "http://localhost:4000",
+  "video": false,
+  "supportFile": "tests/e2e/cypress/support/index.ts"
+}

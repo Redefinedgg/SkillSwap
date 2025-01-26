@@ -1,0 +1,13 @@
+{
+  "name": "skillswap",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "concurrently --kill-others \"npm run dev:client\" \"npm run dev:service\"",
+    "dev:client": "npm run dev --prefix ./app/client",
+    "dev:service": "npm run start:dev --prefix ./app/service"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}
