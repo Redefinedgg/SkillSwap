@@ -1,0 +1,9 @@
+services:
+  frontend:
+    build:
+      context: ./app/client
+      dockerfile: Dockerfile.prod
+    env_file:
+      - ./app/client/.env.prod
+    ports:
+      - "80:3000"

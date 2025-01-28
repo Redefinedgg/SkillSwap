@@ -1,0 +1,12 @@
+services:
+  frontend:
+    build:
+      context: ./app/client
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=development
+
+# docker-compose -f docker-compose.yml -f docker-compose.override.yml up
+# docker-compose -f docker-compose.yml -f docker-compose.prod.yml up --build

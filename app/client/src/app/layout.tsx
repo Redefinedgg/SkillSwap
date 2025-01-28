@@ -1,16 +1,13 @@
-import Header from "@/widgets/Layout/Header/ui";
 import { Nunito } from "next/font/google";
 import { FC } from "react";
 import "./(deffault)/globals.scss";
-
-interface Props extends React.PropsWithChildren {}
 
 const nunito = Nunito({
   weight: ["400", "700"],
   subsets: ["latin"],
 });
 
-const RootLayout: FC<Props> = ({ children }) => {
+const RootLayout: FC<React.PropsWithChildren> = ({ children }) => {
   return (
     <html lang="en">
       <head>
@@ -23,7 +20,6 @@ const RootLayout: FC<Props> = ({ children }) => {
       </head>
       <body>
         <main className={nunito.className}>
-          <Header />
           {children}
         </main>
       </body>

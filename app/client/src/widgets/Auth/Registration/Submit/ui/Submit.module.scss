@@ -1,0 +1,14 @@
+.submit {
+  padding: 10px;
+  border-radius: 7px;
+  border: 2px solid #ccc;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+  width: 200px;
+  cursor: pointer;
+
+  &:hover {
+    background-color: #9dfb98;
+    box-shadow: 0 0 10px rgba(157, 251, 152, 1);
+    border: 2px solid rgb(218, 253, 216);
+  }
+}
